@@ -1,0 +1,197 @@
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Login Container Styles */
+.login-container {
+  width: 80%;
+  max-width: 400px;
+  background-color: #212121;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.login-container h1 {
+  margin-bottom: 20px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #666666;
+  border-radius: 4px;
+  background-color: #333333;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+.login-container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #ffffff;
+  cursor: pointer;
+  width: 100%;
+}
+
+.login-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Chat Container Styles (existing styles, slightly adjusted for alignment) */
+.chat-container {
+  width: 80%;
+  max-width: 800px;
+  height: 80vh;
+  background-color: #212121;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 16px;
+  text-align: center;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-main {
+  flex-grow: 1;
+  padding: 16px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-messages {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.message {
+  padding: 8px 12px;
+  border-radius: 6px;
+  max-width: 70%;
+  margin-bottom: 8px;
+  word-break: break-word;
+}
+
+.message .nickname {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.message.sent {
+  background-color: #4CAF50;
+  color: #ffffff;
+  align-self: flex-end;
+}
+
+.message.received {
+  background-color: #607D8B;
+  color: #ffffff;
+  align-self: flex-start;
+}
+
+.chat-footer {
+  padding: 16px;
+  display: flex;
+  gap: 8px;
+}
+
+.chat-footer input[type="text"] {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid #666666;
+  border-radius: 4px;
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.chat-footer button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.chat-footer button:hover {
+  background-color: #0056b3;
+}
+
+/* Owner Rank Styles */
+.owner-rank {
+  background: linear-gradient(to right, #2980B9, #6DD5FA);
+  color: white;
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  margin-right: 5px;
+}
+
+/* Bot Rank Styles */
+.bot-rank {
+  background: linear-gradient(to right, #8e44ad, #9b59b6);
+  color: white;
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  margin-right: 5px;
+}
+
+/* Muted Message Styles */
+.message.muted {
+  color: #888;
+  font-style: italic;
+}
+
+/* Mango Rank Styles */
+.mango-rank {
+  background: linear-gradient(to right, #FFD700, #FFA500);
+  color: white;
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  margin-right: 5px;
+}
+
+/* Student Rank Styles */
+.student-rank {
+  background: linear-gradient(to right, #808080, #A9A9A9);
+  color: white;
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  margin-right: 5px;
+}
+
+/* Temp Rank Styles */
+.temprank {
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  margin-right: 5px;
+}

@@ -1,0 +1,43 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XChat</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+
+  <div id="login-container" class="login-container">
+    <h1>Welcome to xChat</h1>
+    <input type="text" id="nickname-input" placeholder="Enter your nickname" required>
+    <input type="password" id="rank-code-input" placeholder="Admin Rank Code (optional)">
+    <button id="login-button">Join Chat</button>
+  </div>
+
+  <div class="chat-container" id="chat-container" style="display: none;">
+    <header class="chat-header">
+      <h1>xChat</h1>
+      <span id="user-nickname"></span>
+    </header>
+
+    <main class="chat-main">
+      <div id="chat-messages" class="chat-messages">
+        <!-- Messages will be appended here -->
+      </div>
+    </main>
+
+    <footer class="chat-footer">
+      <input type="text" id="message-input" placeholder="Type your message...">
+      <button id="send-button">Send</button>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
